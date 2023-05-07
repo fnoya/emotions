@@ -1,0 +1,29 @@
+.image-uploader {
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .image-uploader:hover {
+    border-color: #aaa;
+  }
+  
+  .text {
+    font-size: 16px;
+    color: #aaa;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .icon {
+    font-size: 64px;
+    color: #aaa;
+  }
+  
