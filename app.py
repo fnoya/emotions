@@ -84,7 +84,7 @@ def detect_emotions():
     #return jsonify({'image': encoded_str})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0')
 
 """ if __name__ == '__main__':
     #process_video("images/video1.mp4")
