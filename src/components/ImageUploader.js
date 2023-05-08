@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Dropzone from 'react-dropzone';
 import axios from 'axios';
+import './ImageUploader.css';
 
 function ImageUploader() {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -38,21 +39,21 @@ function ImageUploader() {
         {previewImage ? (
           <img src={previewImage} alt="Preview" />
         ) : (
-          <p>Selecciona una imagen</p>
+          <p className='text'>Selecciona una imagen</p>
         )}
       </div>
-      <Dropzone onDrop={handleFileSelect}>
+      <Dropzone onDrop={handleFileSelect} >
         {({ getRootProps, getInputProps }) => (
-            <section>
-                <div {...getRootProps()}>
+            <section className='image-uploader'>
+                <div {...getRootProps()} >
                   <input {...getInputProps()} />
-                  <p>Arrastra y suelta una imagen aquí o haz clic para seleccionar</p>
+                  <p className='text'>Arrastra y suelta una imagen aquí o haz clic para seleccionar</p>
                 </div>
               </section>
         )}
       </Dropzone>
       {selectedFile && (
-        <button onClick={handleFileUpload}>Subir imagen</button>
+        <button className='big-button' onClick={handleFileUpload}>Procesar imagen</button>
       )}
     </div>
   );

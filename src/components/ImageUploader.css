@@ -1,8 +1,8 @@
 .image-uploader {
     border: 2px dashed #ccc;
     border-radius: 5px;
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: 100px;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
@@ -12,11 +12,11 @@
   }
   
   .image-uploader:hover {
-    border-color: #aaa;
+    border-color: #5d9e56;
   }
   
   .text {
-    font-size: 16px;
+    font-size: 20px;
     color: #aaa;
     margin-top: 10px;
     text-align: center;
@@ -26,4 +26,28 @@
     font-size: 64px;
     color: #aaa;
   }
+
+  .big-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 16px 20%;
+    margin: auto auto;
+    border-radius: 8px;
+    background-color: #08735c;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .big-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    background-color: #0e584b;
+  }
+  
   
